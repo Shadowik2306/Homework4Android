@@ -11,30 +11,30 @@
         android:text="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="152dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/secondButton"/>
 
     <Button
         android:id = "@+id/secondButton"
         android:text="2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="152dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/firstButton" />
+        app:layout_constraintTop_toBottomOf="@id/firstButton"
+        app:layout_constraintBottom_toTopOf="@id/thirdButton"/>
 
     <Button
-        android:id = "@+id/thirdButton"
-        android:text="3"
+        android:id="@+id/thirdButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="152dp"
+        android:text="3"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/secondButton" />
+        app:layout_constraintTop_toBottomOf="@id/secondButton" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
